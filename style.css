@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins'; stroke: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #f4f4f4;
+    color: #000000;
+}
+* {box-sizing:border-box}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  /* Close button on hover */
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+  /* Bordered form */
+form {
+    border: 3px solid #f1f1f1;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+button {
+    background-color: #ffacac;
+    color: rgb(0, 0, 0);
+    padding: 5px 5px 5px 3px;
+    border: none;
+    cursor: pointer;
+    width: 5%;
+    border-radius: 10px;
+    font-weight: bolder;
+  }
+  
+  /* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+   
+  /* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+.container2{
+    padding: 20px;
+}
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  padding-top: 50px;
+}
+.mySlides img{
+    width: 100%;
+    height: 580px;
+    object-fit: cover;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(254, 201, 201, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 70%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.icons{
+    display: inline-block;
+    margin-left: 85%;
+}
+.icons i{
+    color: var(--text--color);
+    font-size: 24px;
+    margin-left: 15px;
+}
+.icons i:hover{
+    opacity: 0.7;
+}
+section{
+    padding: 20px 8%;
+}
+.container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 2rem;
+}
+.box{
+    background: transparent;
+    box-shadow: 5px 30px 56.1276px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.box img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+.box h4{
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+.box h5{
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+}
+.container-text{
+    padding: 0px 20px 10px 20px;
+}
+.box .cart i{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    background: var(--text--color);
+    color: var(--bg--color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: #fac8c8;
+    border-radius: 50%;
+    color: #f1f1f1;
+}
+.box:hover{
+    transform: translatez(-10px);
+    background: #ffb6b6;
+    transform: scale(1.1);
+}
+.about{
+    background: #e9e9e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about h2{
+   text-align: center;
+}
+
+.about-content{
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #000000;
+    border-radius: 20px;
+}
+nav ul li a:hover,
+nav ul li a.active
+{
+    background: #ffb6b6;
+    color: #000000;
+}
+
+.header-text{
+    margin-top: 5%;
+    font-size: 30px;
+    margin-left: 43%;
+    font-weight: 800;
+}
+/*-------------------tab------------------------*/
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 30%px;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    color: #ff2b2b;
+    padding-bottom: 10px;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+     bottom: -8px;
+    transition: 0.5s;
+}
+.tab-link.active-link::after{
+    width: 50%;
+}
+
+.tab-links:hover::after{
+    width: 100%;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+    font-size: 20px;
+}
+/*-------------------contact--------------------*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #c5c5c5;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.contact-left h1{
+    margin-top: 20px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #000000;
+    transform: translateY(-5px);
+
+}
+.btn.btn3{
+    align-items: center;
+    justify-content: center;
+    background: #ffb6b6;
+    display: inline-block;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #d8d8d8;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ffb6b6;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+    font-size: larger;
+}
+.btn:hover{
+    background: #ff7d7d;
+}
+/*----------------small screen---------*/
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-color: #f4f4f4;
+    }
+    .header-text{
+        margin-top: 20px;
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 35%;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    .box{
+        padding: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
+    }
+    .icons{
+        display: inline-block;
+        margin-left: 70%;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        margin-right: 90%;
+        margin-top: 10px;
+    }
+    nav ul{
+        background: #eae9e9;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 10%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+}

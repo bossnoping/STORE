@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-widt, initial-scale=1.0">
+        <title>4BOYSTORE</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <script src="https://kit.fontawesome.com/62645eb21c.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+            <nav>
+                <img class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="active">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Faq</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars-staggered" onclick="openmenu()"></i>
+            </nav>
+            <div class="icons">
+                <a style="color: rgb(254, 167, 167);" href="#"><i class='bx bx-user-circle' ></i></a>
+                <a style="color: rgb(255, 171, 171);" href="#"><i class='bx bxs-shopping-bag' ></i></a>
+            </div>
+            
+            <!-- Button to open the modal login form -->
+<button class="loginbotton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container2">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+            <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="https://c1.wallpaperflare.com/preview/203/382/576/fashion-girls-model-dress.jpg" style="width:100%">
+      <div class="text">4BOY STORE</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="https://c0.wallpaperflare.com/preview/884/160/866/apparel-assortment-boutique-clothes.jpg" style="width:100%">
+      <div class="text">4BOY STORE</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="https://www.pendleton-usa.com/dw/image/v2/BGKJ_PRD/on/demandware.static/-/Library-Sites-library-shared/default/dw05ed7e1c/images/hp/10_16_23_HP/10_16_23_HP_05_D.jpg?sw=1440&sh=671&q=80" style="width:100%">
+      <div class="text">4BOY STORE</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="https://cdn.shopify.com/s/files/1/0359/8357/files/SP23-PLP-Banners-Shirts-M.jpg?v=1678468281" style="width:100%">
+        <div class="text">4BOY STORE</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+            <!--------shop-->
+            <section class="shop" id="shop">
+                <div class="container1">
+                    <div class="box">
+                        <img src="https://i.pinimg.com/564x/45/eb/7c/45eb7c9a5dd2342369b08511924aeb81.jpg">
+                        <h4>Product price:</h4>
+                        <h5>$7.99</h5>
+                        <p class="tab-links active-link" onclick="opentab('Shirt1')">Shirt 1</p>
+                        <div class="tab-contents active-link" id="Shirt1">
+                            <div class="Shirt1">
+                            <ul>
+                                <p class="container-text"> If you're looking for a casual shirt with just one button at the collar (a single-button closure), you might find various options in fashion stores or online retailers. This is a common style for casual shirts.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img src="https://www.royaura.com/image_cache/resize/670x890/image/catalog/product/2023-12-15/2-2-1702636862797.jpeg">
+                        <h4>Product price:</h4>
+                        <h5>$5.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt2')">Shirt 2</p>
+                        <div class="tab-contents" id="Shirt2">
+                            <div class="Shirt2">
+                            <ul>
+                                <p class="container-text">Fun Cartoon Bear Print Men's Button Pocket Shirt feature a cartoon bear holding the beer and pee.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img src="https://www.royaura.com/image_cache/resize/670x890/image/catalog/product/2021-12-31/O1CN01GvtwJw1XlYfm3TZd0_-2200729362964-0-cib-1640916940275.jpg">
+                        <h4>Product price:</h4>
+                        <h5>$5.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt3')">Shirt 3</p>
+                        <div class="tab-contents" id="Shirt3">
+                            <div class="Shirt3">
+                            <ul>
+                                <p class="container-text">Feature illustrations of classic NASCAR cars from the retro era. Ensure detailed renderings and use a variety of cars to create a dynamic and nostalgic design.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img src="https://i.pinimg.com/564x/58/a6/04/58a6041362802c4675002e4ea954c21d.jpg">
+                        <h4>Product price:</h4>
+                        <h5>$5.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt4')">Shirt 4</p>
+                        <div class="tab-contents" id="Shirt4">
+                            <div class="Shirt4">
+                            <ul>
+                                <p class="container-text">T-shirt design with a whimsical and charming town scene sketched across the front. </p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="https://i.pinimg.com/564x/0b/40/11/0b4011893809b3ef331bb40e5bea3286.jpg">
+                        <h4>Product price:</h4>
+                        <h5>$7.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt5')">Shirt 5</p>
+                        <div class="tab-contents" id="Shirt5">
+                            <div class="Shirt5">
+                            <ul>
+                                <p class="container-text">Give your shirt a vintage look by using an aged paper background and a classic world map design.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <img src="https://i.pinimg.com/564x/30/59/f0/3059f0a66631130a6b22f90ed8d84e27.jpg">
+                        <h4>Product price:</h4>
+                        <h5>$5.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt6')">Shirt 6</p>
+                        <div class="tab-contents" id="Shirt6">
+                            <div class="Shirt6">
+                            <ul>
+                                <p class="container-text">This indicates that the shirt has a pattern or design featuring guitars. It could be an all-over print or a repeated pattern on the fabric.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img src="https://i.pinimg.com/564x/b2/a9/2f/b2a92fa04576a20349aaef79e87607d4.jpg">
+                        <h4>Product price:</h4>
+                        <h5>$5.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt7')">Shirt 7</p>
+                        <div class="tab-contents" id="Shirt7">
+                            <div class="Shirt7">
+                            <ul>
+                                <p class="container-text"> The use of natural fibers, such as cotton, linen, or a blend of natural materials, provides comfort and breathability.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <img src="https://www.royaura.com/image_cache/resize/670x890/image/catalog/product/2023-10-07/SH9Q71B6-1696650724957.jpeg">
+                        <h4>Product price:</h4>
+                        <h5>$7.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt8')">Shirt 8</p>
+                        <div class="tab-contents" id="Shirt8">
+                            <div class="Shirt8">
+                            <ul>
+                                <p class="container-text">Feature a detailed and stylized vintage illustration of an octopus as the central motif. The octopus can be portrayed with tentacles swirling around, creating a dynamic and captivating image.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img src="https://www.royaura.com/image_cache/resize/670x890/image/catalog/product/2023-12-05/5-1701771133661.jpeg">
+                        <h4>Product price:</h4>
+                        <h5>$7.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt9')">Shirt 9</p>
+                        <div class="tab-contents" id="Shirt9">
+                            <div class="Shirt9">
+                            <ul>
+                                <p class="container-text">Feature a detailed and intricate Ukiyo-e style dragon as the central focus of the shirt. The dragon should be depicted in a traditional pose, surrounded by swirling clouds and flames.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+                
+                    <div class="box">
+                        <img src="https://www.royaura.com/image_cache/resize/670x890/image/catalog/product/2023-11-22/eacd52b3cf7ca0e5e564d5eb6078121b-1700642630144.jpeg">
+                        <h4>Product price:</h4>
+                        <h5>$7.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt10')">Shirt 10</p>
+                        <div class="tab-contents" id="Shirt10">
+                            <div class="Shirt10">
+                            <ul>
+                                <p class="container-text">Designing a Mardi Gras printed men's button pocket shirt involves incorporating the vibrant and festive colors associated with Mardi Gras celebrations, as well as iconic symbols and elements related to the event.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="box">
+                        <img src="https://www.royaura.com/image_cache/resize/670x890/image/catalog/product/2022-12-06/1206-2-1670323057508.jpeg">
+                        <h4>Product price:</h4>
+                        <h5>$7.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt11')">Shirt 11</p>
+                        <div class="tab-contents" id="Shirt11">
+                            <div class="Shirt11">
+                            <ul>
+                                <p class="container-text">Embrace a classic short sleeve design to enhance the casual and laid-back feel of the shirt. It's perfect for warm weather and fits the vacation vibe.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <img src="https://www.royaura.com/image_cache/resize/670x890/image/catalog/product/2023-12-06/1-1701834113141.jpeg">
+                        <h4>Product price:</h4>
+                        <h5>$7.99</h5>
+                        <p class="tab-links" onclick="opentab('Shirt12')">Shirt 12</p>
+                        <div class="tab-contents" id="Shirt12">
+                            <div class="Shirt12">
+                            <ul>
+                                <p class="container-text">Integrate a silhouette or stylized illustration of a classic car, perhaps a vintage convertible or a surf-style woody wagon. This adds a touch of nostalgia and a playful twist to the botanical theme.</p>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <a class="cart" onclick="document.getElementById('id02').style.display='block'"><i class='bx bxs-cart'></i></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+            <!-- Shop popup -->
+<div id="id02" class="modal">
+    <span onclick="document.getElementById('id02').style.display='none'"
+  class="close" title="Close Modal">&times;</span>
+  
+    <!-- Modal Content -->
+    <form class="cart" action="/action_page.php">
+  
+      <div class="container2">
+        <label for="uname"><b>Address</b></label>
+        <input type="text" placeholder="Enter Address" name="uname" required>
+  
+        <label for="psw"><b>Phone Number</b></label>
+        <input type="password" placeholder="Enter Phone Number" name="psw" required>
+  
+        <button type="submit">Buy</button>
+      </div>
+  
+      <div class="container2" style="background-color:#e1e1e150">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </form>
+  </div>
+            <!--------showmore------------>
+            <button class="btn success">More</button>
+            <!--------about-->
+            <section class="about" id="about">
+                <div class="about-content">
+                    <h2>About</h2>
+                    <p> This website was established to be a part of Home economics subject to improve the E-commerce skill of the student. 4BOY STORE provides a seamless and enjoyable online shopping experience, offering a diverse collection of shirts, personalized recommendations, and a secure platform, ultimately meeting the convenience and style needs of its customers.</p>
+                </div>
+            </section>
+            <!--------scroll down-->
+            <div class="scroll-down">
+                <a href="#"><i class="ri-arrow-down-circle-line"></i></a>
+            </div>
+            <span class="home-imghover"></span>
+            <span class="text-imghover"></span>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                    </div>
+            <!----------contact-->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 style="font-size: 40px;">Contact me</h1>
+                            <p><i class='bx bxs-paper-plane' ></i>bossrayong8899@gmail.com</p>
+                            <p><i class='bx bx-phone' ></i></i>0928048080</p>
+                            <div class="social-icons">
+                                <a href=""><i class='bx bxl-facebook-square'></i></a>
+                                <a href=""><i class='bx bxl-twitter'></i></a>
+                                <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                                <a href=""><i class='bx bxl-youtube'></i></a>
+
+                        <div class="contact-right">
+                            <form>
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="text" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" id="" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn3">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+
+            </script>
+            <script>
+    
+                var sidemenu = document.getElementById("sidemenu");
+                function openmenu(){
+                    sidemenu.style.right = "0";
+                }
+                function closemenu(){
+                    sidemenu.style.right = "-200px";
+                }
+
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+            </script>
+        </body>
+</html>
